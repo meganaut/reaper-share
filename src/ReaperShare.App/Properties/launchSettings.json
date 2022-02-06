@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ReaperShare.App": {
+      "commandName": "Project",
+      "commandLineArgs": "-t \"S:\\projects\\reaper-share\\testConfig\\appsettings.json\""
+    }
+  }
+}

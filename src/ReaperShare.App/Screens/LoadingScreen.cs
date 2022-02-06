@@ -2,6 +2,7 @@
 public class LoadingScreen : IScreen
 {
     private readonly ConfigManager _configManager;
+
     private string message = "loading";
 
     public LoadingScreen(ConfigManager configManager)
@@ -30,7 +31,7 @@ public class LoadingScreen : IScreen
             if (!validate.IsFaulted && !_configManager.EnvironmentUpdated)
             {
 
-                message = "loading" + String.Concat(Enumerable.Range(0, i).Select(_ => "."));
+                message = "loading" + String.Concat(Enumerable.Range(0, i + 1).Select(_ => "."));
                 yield return lastState;
             }
             else
